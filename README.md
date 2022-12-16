@@ -66,3 +66,10 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+### Todos
+
+[ ] Loader will be added.
+[ ] Completed status will be updated.
+[ ] Text editing can be done.
+[ ] Addition and update dates will be added. Update dates will be kept in a separate sub collection in Todo.
