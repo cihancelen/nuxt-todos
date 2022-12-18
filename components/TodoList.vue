@@ -27,9 +27,11 @@
             </div>
 
             <span
-              class="w-1/4 h-12 bg-[#e0ebff] rounded-[7px] flex justify-center text-sm text-[#5b7a9d] font-semibold items-center"
-              >9:00 AM</span
+              class="w-1/4 h-12 bg-[#e0ebff] rounded-[7px] flex justify-center text-sm text-[#5b7a9d] font-semibold items-center text-center"
             >
+              {{ todo.dateTime.toDateString() }}
+              {{ todo.dateTime.toLocaleTimeString() }}
+            </span>
           </div>
         </li>
       </ul>

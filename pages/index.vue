@@ -20,7 +20,18 @@ onMounted(() => {
   console.log(`[IndexPage.OnMounted]`)
 
   todosSnap.then((result) => {
-    state.setTodos(result.docs.map((o) => o.data() as ITodoItem))
+    state.setTodos(
+      result.docs.map((o) => {
+        const todo = o.data() as ITodoItem
+
+        return {
+          ...todo,
+          dateTime: new Date(
+            (todo.dateTime as unknown as { seconds: number }).seconds * 1000
+          ),
+        }
+      })
+    )
 
     console.log(`[IndexPage.OnMounted]`, state.todos)
   })
