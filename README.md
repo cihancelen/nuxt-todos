@@ -70,6 +70,9 @@ More information about the usage of this directory in [the documentation](https:
 ### Todos
 
 [ ] Loader will be added.
+
 [ ] Completed status will be updated.
+
 [ ] Text editing can be done.
+
 [ ] Addition and update dates will be added. Update dates will be kept in a separate sub collection in Todo.
